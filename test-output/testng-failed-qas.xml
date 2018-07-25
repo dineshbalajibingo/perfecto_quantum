@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Appium Demo Suite" parallel="tests">
+  <parameter name="driver.name" value="perfectoDriver"/>
+  <listeners>
+    <listener class-name="com.quantum.listeners.QuantumReportiumListener"/>
+  </listeners>
+  <test name="IOS Calc Test">
+    <method-selectors>
+      <method-selector>
+        <script language="beanshell">
+          <![CDATA[testngMethod.getMethodName().equalsIgnoreCase("Validating invalid user name and password error message")]]>
+        </script>
+      </method-selector>
+    </method-selectors>
+    <parameter name="env.resources" value="src/main/resources/ios"/>
+    <parameter name="driver.capabilities.model" value="iPhone.*"/>
+    <classes>
+      <class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"/>
+    </classes>
+  </test> <!-- IOS Calc Test -->
+</suite> <!-- Appium Demo Suite -->

@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>TestNG:  Android Calc Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Android Calc Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/2</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jul 25 00:21:47 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>42 seconds (42452 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>@appium </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qmetry.qaf.automation.step.client.Scenario.Appium Example()'><b>Appium Example</b><br>Test class: com.qmetry.qaf.automation.step.client.Scenario (Appium Example)<br/>
+<a href="#Output-1398717218" onClick='toggleBox("Output-1398717218", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1398717218" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1398717218">
+▀▄▀▄▀ DEVICE PROPERTIES: Capabilities [{reportPdfUrl=https://fifththird.reporting.perfectomobile.com/export/api/v1/test-executions/pdf?externalId[0]=gopinath.nagarajan@internal.53.com_RemoteWebDriver_18-07-24_18_51_45_208&_timestamp[0]=1532458305952, available=false, language=English, deviceName=435A495A48553398, deviceId=435A495A48553398, resolution=1440x2960, platform=ANY, wifiMacAddress=8c:45:00:1c:8e:2c, manufacturer=Samsung, mode=CONNECTED, password=, cradleId=BOS-E2-F1-6/VIRTUAL/01, deviceSessionId=gopinath.nagarajan@internal.53.com_RemoteWebDriver_18-07-24_18_51_45_208, osVersion=8.0.0, driverClass=io.appium.java_client.android.AndroidDriver, automationName=Appium, host=fifththird.perfectomobile.com, singleTestReportUrl=https://fifththird.reporting.perfectomobile.com/library?externalId[0]=gopinath.nagarajan@internal.53.com_RemoteWebDriver_18-07-24_18_51_45_208&_timestamp[0]=1532458305952, inUse=true, takesScreenshot=true, browserName=MobileOS, javascriptEnabled=true, model=Galaxy S9, platformName=Android, firmware=starqltesq-user 8.0.0 R16NW G960USQU1ARB7 release-keys, applicationName=Calculator, rotatable=true, testGridReportUrl=https://fifththird.reporting.perfectomobile.com/library?externalId[0]=gopinath.nagarajan@internal.53.com_RemoteWebDriver_18-07-24_18_51_45_208&_timestamp[0]=1532458305952, os=Android, entityType=remote_web_driver, allocatedTo=gopinath.nagarajan@internal.53.com, serverConnector=, securityToken=, executionId=gopinath.nagarajan@internal.53.com_RemoteWebDriver_18-07-24_18_51_45_208, webdriver.remote.sessionid=21dde557-6526-4604-a76c-a02ab29b1904, locationContextEnabled=true, scriptName=RemoteWebDriver, location=NA-US-BOS, linkType=lab, reportKey=gopinath.nagarajan@internal.53.com_RemoteWebDriver_18-07-24_18_51_45_208, windTunnelReportUrl=https://fifththird.reporting.perfectomobile.com/library?externalId[0]=gopinath.nagarajan@internal.53.com_RemoteWebDriver_18-07-24_18_51_45_208&_timestamp[0]=1532458305952, user=, operabilityRatingScore=100, cssSelectorsEnabled=true, status=Connected}] ▀▄▀▄▀<br/>
+█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█<br/>
+█ TEST STARTED: Appium Example █<br/>
+█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█<br/>
+<div style="display:block;margin-left:10px;"><div  class="warn"><span class="warn-label">W </span>Given I start application by name "Calculator" :: Not Found.</div><div  class="teststep"><span class="teststep-label">T </span>And I am using an AppiumDriver</div><div  class="teststep"><span class="teststep-label">T </span>When clear Calculator</div><div  class="teststep"><span class="teststep-label">T </span>When add "3" to "5"</div><div  class="teststep"><span class="teststep-label">T </span>Then result should be "8"</div></div><br/>
+</div>
+</td>
+<td><div><pre>com.qmetry.qaf.automation.step.StepNotFoundException: Given I start application by name &quot;Calculator&quot;@src/main/resources/scenarios/appiumCalc.feature#7 TestStep implementation not found. 
+ Please provide implementation or ensure &apos;step.provider.pkg&apos; property value includes appropriate package.
+	at .Given I start application by name &quot;Calculator&quot;(src/main/resources/scenarios/appiumCalc.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1398717218", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1398717218'><pre>com.qmetry.qaf.automation.step.StepNotFoundException: Given I start application by name &quot;Calculator&quot;@src/main/resources/scenarios/appiumCalc.feature#7 TestStep implementation not found. 
+ Please provide implementation or ensure &apos;step.provider.pkg&apos; property value includes appropriate package.
+	at .Given I start application by name &quot;Calculator&quot;(src/main/resources/scenarios/appiumCalc.feature:7)
+</pre></div></td>
+<td>17</td>
+<td>com.qmetry.qaf.automation.step.client.Scenario@3ea</td></tr>
+<tr>
+<td title='com.qmetry.qaf.automation.step.client.Scenario.Appium Example 2()'><b>Appium Example 2</b><br>Test class: com.qmetry.qaf.automation.step.client.Scenario (Appium Example 2)<br/>
+<a href="#Output-1383137465" onClick='toggleBox("Output-1383137465", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1383137465" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1383137465">
+█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█<br/>
+█ TEST STARTED: Appium Example 2 █<br/>
+█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█<br/>
+<div style="display:block;margin-left:10px;"><div  class="warn"><span class="warn-label">W </span>Given I start application by name "Calculator" :: Not Found.</div><div  class="teststep"><span class="teststep-label">T </span>And I am using an AppiumDriver</div><div  class="teststep"><span class="teststep-label">T </span>When clear Calculator</div><div  class="teststep"><span class="teststep-label">T </span>When add "6" to "7"</div><div  class="teststep"><span class="teststep-label">T </span>Then result should be "13"</div></div><br/>
+</div>
+</td>
+<td><div><pre>com.qmetry.qaf.automation.step.StepNotFoundException: Given I start application by name &quot;Calculator&quot;@src/main/resources/scenarios/appiumCalc.feature#15 TestStep implementation not found. 
+ Please provide implementation or ensure &apos;step.provider.pkg&apos; property value includes appropriate package.
+	at .Given I start application by name &quot;Calculator&quot;(src/main/resources/scenarios/appiumCalc.feature:15)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1383137465", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1383137465'><pre>com.qmetry.qaf.automation.step.StepNotFoundException: Given I start application by name &quot;Calculator&quot;@src/main/resources/scenarios/appiumCalc.feature#15 TestStep implementation not found. 
+ Please provide implementation or ensure &apos;step.provider.pkg&apos; property value includes appropriate package.
+	at .Given I start application by name &quot;Calculator&quot;(src/main/resources/scenarios/appiumCalc.feature:15)
+</pre></div></td>
+<td>0</td>
+<td>com.qmetry.qaf.automation.step.client.Scenario@3eb</td></tr>
+</table><p>
+</body>
+</html>
