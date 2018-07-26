@@ -5,6 +5,7 @@ import java.util.Map;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import com.qmetry.qaf.automation.step.QAFTestStepProvider;
 import com.qmetry.qaf.automation.ui.WebDriverTestBase;
@@ -14,6 +15,7 @@ import com.quantum.utils.AppiumUtils;
 import com.quantum.utils.ConfigurationUtils;
 import com.quantum.utils.ConsoleUtils;
 import com.quantum.utils.DeviceUtils;
+import com.quantum.utils.DriverUtils;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -26,24 +28,20 @@ import io.appium.java_client.ios.IOSDriver;
 @QAFTestStepProvider
 public class FifththirdLoginDefs {
 	
-	private static WebDriverTestBase webDriverTestBase = new WebDriverTestBase();
 
-    private static QAFExtendedWebDriver getDriver(){
-        return webDriverTestBase.getDriver();
-    }
-	
 	
 	@Given("^I start the application by the name \"([^\"]*)\"$")
 	public void i_start_the_application_by_the_name(String name) throws Throwable {
-		Map<String, Object> params = new HashMap<>();
-		params.put("name", name);
-		getDriver().executeScript("mobile:application:open", params);
 
+		System.out.println("_____________Does application open ?");
+		HashMap<String , Object> script = new HashMap<String, Object>();
+		script.put("name", "Fifth Third");
+		AppiumUtils.getAppiumDriver().executeScript("mobile:application:open", script);
+		System.out.println("---------------------------->App is opened");
+		
 	}
 	
- 
-
-	@Given("^I am using AppiumDriver$")
+ 	@Given("^I am using AppiumDriver$")
 	public void i_am_using_AppiumDriver() throws Throwable {
 		if (ConfigurationUtils.getBaseBundle().getPropertyValue("driver.name").contains("Remote"))
 			ConsoleUtils.logWarningBlocks("Driver is an instance of QAFExtendedWebDriver");
@@ -55,15 +53,20 @@ public class FifththirdLoginDefs {
 	
 	@Given("^user is in login page$")
 	public void user_is_in_login_page() throws Throwable {
-	   System.out.println("I am in login Page now");
+		   System.out.println("I am in login Page now");
+
 	}
 
 	@When("^I enter \"([^\"]*)\" and \"([^\"]*)\"$")
 	public void i_enter_and(String arg1, String arg2) throws Throwable {
+		System.out.println("-----------> I am here in user name and password");
 		
-		new QAFExtendedWebElement("input.userdidtxt").click();
-
-
+		//new QAFExtendedWebElement("input.userdidtxt").click();
+		AppiumUtils.getAppiumDriver().findElement(By.xpath("//AppiumAUT/XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeButton[1]"))
+									  .click();
+			//driver.findElement(By.xpath("//AppiumAUT/XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeButton[1]")).sendKeys("test");
+			System.out.println("-----------> I got clicked");
+			Thread.sleep(1200);
 	
 	}
 
@@ -97,5 +100,6 @@ public class FifththirdLoginDefs {
 	
 	}
 
+	
 
 }

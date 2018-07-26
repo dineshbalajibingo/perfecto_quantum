@@ -7,10 +7,10 @@
     <!-- To use actual AppiumDriver classes defined    -->
     <!-- by driverClass property in env.resources dirs -->
     <!-- Set driver.name value to perfectoDriver       -->
-    <parameter name="driver.name" value="perfectoDriver"/>
+      <parameter name="driver.name" value="perfectoDriver"/>   
 
     <test name="IOS Calc Test" enabled="true">
-        <parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
+        <parameter name="driver.capabilities.model" value="iPhone-8 Plus"></parameter>
         <parameter name="env.resources" value="src/main/resources/ios"/>
 
         <groups>
@@ -23,11 +23,13 @@
         </classes>
     </test>
     <test name="Android Calc Test" enabled="false">
-        <parameter name="driver.capabilities.model" value="Galaxy S.*"></parameter>
+        <parameter name="driver.capabilities.model" value="Galaxy S7"></parameter> 
+        <parameter name="driver.capabilities.platformVersion" value="Android"></parameter> 
+           <parameter name="driver.capabilities.deviceName" value="CE6C01B2"></parameter> 
         <parameter name="env.resources" value="src/main/resources/android"/>
         <groups>
             <run>
-                <include name="@appium"/>
+                <include name="@smoke"/>
             </run>
         </groups>
         <classes>

@@ -128,18 +128,40 @@
                   <a name="Validating invalid user name and password error message">
                   </a> <!-- Validating invalid user name and password error message -->
                   <span class="method-name">Validating invalid user name and password error message</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Timed out after 15 seconds waiting for presence of element located by: By.xpath: //AppiumAUT/XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField[1]
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Element with by xpath &apos;//AppiumAUT/XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeButton[1]&apos; wasn&apos;t found.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;ba1ffa30e57b&apos;, ip: &apos;172.18.0.4&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.4.0-47-generic&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: EventFiringWebDriver
+Command duration or timeout: 60.38 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
 System info: host: &apos;Bingo&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;1.8.0_60&apos;
-Driver info: driver.version: QAFExtendedWebDriver
-	at .When I enter &quot;PerfectoMOBTest&quot; and &quot;Test@1234&quot;(src/main/resources/scenarios/fifththirdLogin.feature:7)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:292)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.load(QAFExtendedWebDriver.java:216)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement.load(QAFExtendedWebElement.java:299)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement.execute(QAFExtendedWebElement.java:250)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
-	at com.quantum.steps.FifththirdLoginDefs.i_enter_and(FifththirdLoginDefs.java:64)
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{reportPdfUrl=https://fifththird.reporting.perfectomobile.com/export/api/v1/test-executions/pdf?externalId[0]=dinesh.venkataraman@internal.53.com_RemoteWebDriver_18-07-26_10_16_46_841&amp;_timestamp[0]=1532600206815, simpleIsVisibleCheck=true, available=false, language=English, deviceName=6CEDD7EA68F5F5211728B0554694B223BB4F86ED, deviceId=6CEDD7EA68F5F5211728B0554694B223BB4F86ED, resolution=1242x2208, mode=CONNECTED, password=, cradleId=BOS-E2-F1-5/VIRTUAL/05, deviceSessionId=dinesh.venkataraman@internal.53.com_RemoteWebDriver_18-07-26_10_16_46_841, driverClass=io.appium.java_client.ios.IOSDriver, automationName=Appium, host=fifththird.perfectomobile.com, javascriptEnabled=true, model=iPhone-8 Plus, rotatable=true, entityType=remote_web_driver, serverHost=1.5.43.22:11605, executionId=dinesh.venkataraman@internal.53.com_RemoteWebDriver_18-07-26_10_16_46_841, webdriver.remote.sessionid=84df156f-36ec-474b-b343-8bad019276f5, scriptName=RemoteWebDriver, operabilityRatingScore=100, cssSelectorsEnabled=true, status=Connected, bundleid=com.clairmail.fth.client, platform=ANY, wifiMacAddress=68:ef:43:e0:b5:f8, manufacturer=Apple, osVersion=11.4, platformVersion=11.4, singleTestReportUrl=https://fifththird.reporting.perfectomobile.com/library?externalId[0]=dinesh.venkataraman@internal.53.com_RemoteWebDriver_18-07-26_10_16_46_841&amp;_timestamp[0]=1532600206815, inUse=true, takesScreenshot=true, platformName=iOS, firmware=11.4, applicationName=Fifth Third, testGridReportUrl=https://fifththird.reporting.perfectomobile.com/library?externalId[0]=dinesh.venkataraman@internal.53.com_RemoteWebDriver_18-07-26_10_16_46_841&amp;_timestamp[0]=1532600206815, os=iOS, xcuitestFindOptimizations=true, allocatedTo=dinesh.venkataraman@internal.53.com, bundleId=com.apple.mobilesafari, serverConnector=, securityToken=, locationContextEnabled=true, location=NA-US-BOS, linkType=lab, reportKey=dinesh.venkataraman@internal.53.com_RemoteWebDriver_18-07-26_10_16_46_841, windTunnelReportUrl=https://fifththird.reporting.perfectomobile.com/library?externalId[0]=dinesh.venkataraman@internal.53.com_RemoteWebDriver_18-07-26_10_16_46_841&amp;_timestamp[0]=1532600206815, user=}]
+Session ID: 84df156f-36ec-474b-b343-8bad019276f5
+*** Element info: {Using=xpath, value=//AppiumAUT/XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeButton[1]}
+	at .When I enter &quot;PerfectoMOBTest&quot; and &quot;Test@1234&quot;(src/main/resources/scenarios/fifththirdLogin.feature:8)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at com.quantum.steps.FifththirdLoginDefs.i_enter_and(FifththirdLoginDefs.java:65)
 	at com.qmetry.qaf.automation.step.JavaStep.doExecute(JavaStep.java:159)
 	at com.qmetry.qaf.automation.step.BaseTestStep.execute(BaseTestStep.java:149)
 	at com.qmetry.qaf.automation.step.StringTestStep.execute(StringTestStep.java:134)
@@ -149,48 +171,7 @@ Driver info: driver.version: QAFExtendedWebDriver
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.NoSuchElementException: Element with by xpath &apos;//AppiumAUT/XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField[1]&apos; wasn&apos;t found.
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
-System info: host: &apos;ba1ffa30e57b&apos;, ip: &apos;172.18.0.4&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.4.0-47-generic&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: driver.version: EventFiringWebDriver
-Command duration or timeout: 61.33 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;Bingo&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;1.8.0_60&apos;
-Driver info: com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver
-Capabilities [{reportPdfUrl=https://fifththird.reporting.perfectomobile.com/export/api/v1/test-executions/pdf?externalId[0]=gopinath.nagarajan@internal.53.com_RemoteWebDriver_18-07-25_11_07_55_426&amp;_timestamp[0]=1532516875532, simpleIsVisibleCheck=true, available=false, language=English, deviceName=6CEDD7EA68F5F5211728B0554694B223BB4F86ED, deviceId=6CEDD7EA68F5F5211728B0554694B223BB4F86ED, resolution=1242x2208, mode=CONNECTED, password=, cradleId=BOS-E2-F1-5/VIRTUAL/05, deviceSessionId=gopinath.nagarajan@internal.53.com_RemoteWebDriver_18-07-25_11_07_55_426, driverClass=io.appium.java_client.ios.IOSDriver, automationName=Appium, host=fifththird.perfectomobile.com, browserName=MobileOS, javascriptEnabled=true, model=iPhone-8 Plus, rotatable=true, entityType=remote_web_driver, serverHost=1.5.43.22:11605, executionId=gopinath.nagarajan@internal.53.com_RemoteWebDriver_18-07-25_11_07_55_426, webdriver.remote.sessionid=040d94da-b9de-4457-b3e2-75dc19e19ddc, scriptName=RemoteWebDriver, operabilityRatingScore=100, cssSelectorsEnabled=true, status=Connected, bundleid=com.clairmail.fth.client, platform=ANY, wifiMacAddress=68:ef:43:e0:b5:f8, manufacturer=Apple, osVersion=11.4, singleTestReportUrl=https://fifththird.reporting.perfectomobile.com/library?externalId[0]=gopinath.nagarajan@internal.53.com_RemoteWebDriver_18-07-25_11_07_55_426&amp;_timestamp[0]=1532516875532, inUse=true, takesScreenshot=true, platformName=iOS, firmware=11.4, applicationName=Fifth Third, testGridReportUrl=https://fifththird.reporting.perfectomobile.com/library?externalId[0]=gopinath.nagarajan@internal.53.com_RemoteWebDriver_18-07-25_11_07_55_426&amp;_timestamp[0]=1532516875532, os=iOS, xcuitestFindOptimizations=true, allocatedTo=gopinath.nagarajan@internal.53.com, bundleId=com.apple.mobilesafari, serverConnector=, securityToken=, locationContextEnabled=true, location=NA-US-BOS, linkType=lab, reportKey=gopinath.nagarajan@internal.53.com_RemoteWebDriver_18-07-25_11_07_55_426, windTunnelReportUrl=https://fifththird.reporting.perfectomobile.com/library?externalId[0]=gopinath.nagarajan@internal.53.com_RemoteWebDriver_18-07-25_11_07_55_426&amp;_timestamp[0]=1532516875532, user=}]
-Session ID: 040d94da-b9de-4457-b3e2-75dc19e19ddc
-*** Element info: {Using=xpath, value=//AppiumAUT/XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField[1]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.execute(QAFExtendedWebDriver.java:236)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.findElementByXPath(QAFExtendedWebDriver.java:400)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.findElementByXPath(QAFExtendedWebDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.findElement(QAFExtendedWebDriver.java:171)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.findElement(QAFExtendedWebDriver.java:1)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:899)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:178)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver.load(QAFExtendedWebDriver.java:216)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement.load(QAFExtendedWebElement.java:299)
-	at com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement.execute(QAFExtendedWebElement.java:250)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
-	at com.quantum.steps.FifththirdLoginDefs.i_enter_and(FifththirdLoginDefs.java:64)
-	at com.qmetry.qaf.automation.step.JavaStep.doExecute(JavaStep.java:159)
-	at com.qmetry.qaf.automation.step.BaseTestStep.execute(BaseTestStep.java:149)
-	at com.qmetry.qaf.automation.step.StringTestStep.execute(StringTestStep.java:134)
-	at com.qmetry.qaf.automation.step.client.Scenario.execute(Scenario.java:173)
-	at com.qmetry.qaf.automation.step.client.Scenario.scenario(Scenario.java:225)
-	... 4 more
-Caused by: org.openqa.selenium.NoSuchElementException: Element with by xpath &apos;//AppiumAUT/XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField[1]&apos; wasn&apos;t found.
+Caused by: org.openqa.selenium.NoSuchElementException: Element with by xpath &apos;//AppiumAUT/XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeButton[1]&apos; wasn&apos;t found.
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
 System info: host: &apos;ba1ffa30e57b&apos;, ip: &apos;172.18.0.4&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.4.0-47-generic&apos;, java.version: &apos;1.8.0_131&apos;
@@ -218,7 +199,7 @@ Driver info: driver.version: EventFiringWebDriver
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:748)
-... Removed 27 stack frames
+... Removed 3 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -240,7 +221,7 @@ Driver info: driver.version: EventFiringWebDriver
   &lt;/listeners&gt;
   &lt;test name=&quot;IOS Calc Test&quot;&gt;
     &lt;parameter name=&quot;env.resources&quot; value=&quot;src/main/resources/ios&quot;/&gt;
-    &lt;parameter name=&quot;driver.capabilities.model&quot; value=&quot;iPhone.*&quot;/&gt;
+    &lt;parameter name=&quot;driver.capabilities.model&quot; value=&quot;iPhone-8 Plus&quot;/&gt;
     &lt;groups&gt;
       &lt;run&gt;
         &lt;include name=&quot;@smoke&quot;/&gt;
@@ -299,7 +280,7 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Validating invalid user name and password error message')
 data.setCell(0, 2, 'com.qmetry.qaf.automation.step.client.Scenario')
-data.setCell(0, 3, 103525);
+data.setCell(0, 3, 96629);
 window.suiteTableData['Appium_Demo_Suite']= { tableData: data, tableDiv: 'times-div-Appium_Demo_Suite'}
 return data;
 }
@@ -318,22 +299,34 @@ return data;
             <div class="reporter-method-div">
               <span class="reporter-method-name">Validating invalid user name and password error message</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">▀▄▀▄▀ DEVICE PROPERTIES: Capabilities [{reportPdfUrl=https://fifththird.reporting.perfectomobile.com/export/api/v1/test-executions/pdf?externalId[0]=gopinath.nagarajan@internal.53.com_RemoteWebDriver_18-07-25_11_07_55_426&_timestamp[0]=1532516875532, simpleIsVisibleCheck=true, available=false, language=English, deviceName=6CEDD7EA68F5F5211728B0554694B223BB4F86ED, deviceId=6CEDD7EA68F5F5211728B0554694B223BB4F86ED, resolution=1242x2208, mode=CONNECTED, password=, cradleId=BOS-E2-F1-5/VIRTUAL/05, deviceSessionId=gopinath.nagarajan@internal.53.com_RemoteWebDriver_18-07-25_11_07_55_426, driverClass=io.appium.java_client.ios.IOSDriver, automationName=Appium, host=fifththird.perfectomobile.com, browserName=MobileOS, javascriptEnabled=true, model=iPhone-8 Plus, rotatable=true, entityType=remote_web_driver, serverHost=1.5.43.22:11605, executionId=gopinath.nagarajan@internal.53.com_RemoteWebDriver_18-07-25_11_07_55_426, webdriver.remote.sessionid=040d94da-b9de-4457-b3e2-75dc19e19ddc, scriptName=RemoteWebDriver, operabilityRatingScore=100, cssSelectorsEnabled=true, status=Connected, bundleid=com.clairmail.fth.client, platform=ANY, wifiMacAddress=68:ef:43:e0:b5:f8, manufacturer=Apple, osVersion=11.4, singleTestReportUrl=https://fifththird.reporting.perfectomobile.com/library?externalId[0]=gopinath.nagarajan@internal.53.com_RemoteWebDriver_18-07-25_11_07_55_426&_timestamp[0]=1532516875532, inUse=true, takesScreenshot=true, platformName=iOS, firmware=11.4, applicationName=Fifth Third, testGridReportUrl=https://fifththird.reporting.perfectomobile.com/library?externalId[0]=gopinath.nagarajan@internal.53.com_RemoteWebDriver_18-07-25_11_07_55_426&_timestamp[0]=1532516875532, os=iOS, xcuitestFindOptimizations=true, allocatedTo=gopinath.nagarajan@internal.53.com, bundleId=com.apple.mobilesafari, serverConnector=, securityToken=, locationContextEnabled=true, location=NA-US-BOS, linkType=lab, reportKey=gopinath.nagarajan@internal.53.com_RemoteWebDriver_18-07-25_11_07_55_426, windTunnelReportUrl=https://fifththird.reporting.perfectomobile.com/library?externalId[0]=gopinath.nagarajan@internal.53.com_RemoteWebDriver_18-07-25_11_07_55_426&_timestamp[0]=1532516875532, user=}] ▀▄▀▄▀</span>
+                <span class="reporter-method-output">▀▄▀▄▀ DEVICE PROPERTIES: Capabilities [{reportPdfUrl=https://fifththird.reporting.perfectomobile.com/export/api/v1/test-executions/pdf?externalId[0]=dinesh.venkataraman@internal.53.com_RemoteWebDriver_18-07-26_10_16_46_841&_timestamp[0]=1532600206815, simpleIsVisibleCheck=true, available=false, language=English, deviceName=6CEDD7EA68F5F5211728B0554694B223BB4F86ED, deviceId=6CEDD7EA68F5F5211728B0554694B223BB4F86ED, resolution=1242x2208, mode=CONNECTED, password=, cradleId=BOS-E2-F1-5/VIRTUAL/05, deviceSessionId=dinesh.venkataraman@internal.53.com_RemoteWebDriver_18-07-26_10_16_46_841, driverClass=io.appium.java_client.ios.IOSDriver, automationName=Appium, host=fifththird.perfectomobile.com, javascriptEnabled=true, model=iPhone-8 Plus, rotatable=true, entityType=remote_web_driver, serverHost=1.5.43.22:11605, executionId=dinesh.venkataraman@internal.53.com_RemoteWebDriver_18-07-26_10_16_46_841, webdriver.remote.sessionid=84df156f-36ec-474b-b343-8bad019276f5, scriptName=RemoteWebDriver, operabilityRatingScore=100, cssSelectorsEnabled=true, status=Connected, bundleid=com.clairmail.fth.client, platform=ANY, wifiMacAddress=68:ef:43:e0:b5:f8, manufacturer=Apple, osVersion=11.4, platformVersion=11.4, singleTestReportUrl=https://fifththird.reporting.perfectomobile.com/library?externalId[0]=dinesh.venkataraman@internal.53.com_RemoteWebDriver_18-07-26_10_16_46_841&_timestamp[0]=1532600206815, inUse=true, takesScreenshot=true, platformName=iOS, firmware=11.4, applicationName=Fifth Third, testGridReportUrl=https://fifththird.reporting.perfectomobile.com/library?externalId[0]=dinesh.venkataraman@internal.53.com_RemoteWebDriver_18-07-26_10_16_46_841&_timestamp[0]=1532600206815, os=iOS, xcuitestFindOptimizations=true, allocatedTo=dinesh.venkataraman@internal.53.com, bundleId=com.apple.mobilesafari, serverConnector=, securityToken=, locationContextEnabled=true, location=NA-US-BOS, linkType=lab, reportKey=dinesh.venkataraman@internal.53.com_RemoteWebDriver_18-07-26_10_16_46_841, windTunnelReportUrl=https://fifththird.reporting.perfectomobile.com/library?externalId[0]=dinesh.venkataraman@internal.53.com_RemoteWebDriver_18-07-26_10_16_46_841&_timestamp[0]=1532600206815, user=}] ▀▄▀▄▀</span>
                 <span class="reporter-method-output">█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█</span>
                 <span class="reporter-method-output">█ TEST STARTED: Validating invalid user name and password error message █</span>
                 <span class="reporter-method-output">█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█</span>
                 <span class="reporter-method-output">▄ ▄ ▄ BEGIN STEP: Given I start the application by the name "Fifth Third" ▄ ▄ ▄</span>
                 <span class="reporter-method-output">▀ ▀ ▀ END STEP: Given I start the application by the name "Fifth Third" ▀ ▀ ▀</span>
+                <span class="reporter-method-output">▄ ▄ ▄ BEGIN STEP: And I am using an AppiumDriver ▄ ▄ ▄</span>
+                <span class="reporter-method-output">▀▄▀▄▀ Driver is an instance of IOSDriver ▀▄▀▄▀</span>
+                <span class="reporter-method-output">▀ ▀ ▀ END STEP: And I am using an AppiumDriver ▀ ▀ ▀</span>
                 <span class="reporter-method-output">▄ ▄ ▄ BEGIN STEP: When I enter "PerfectoMOBTest" and "Test@1234" ▄ ▄ ▄</span>
                 <span class="reporter-method-output">▀ ▀ ▀ END STEP: When I enter "PerfectoMOBTest" and "Test@1234" ▀ ▀ ▀</span>
-                <span class="reporter-method-output">▀▄▀▄▀ REPORTIUM URL: https://fifththird.reporting.perfectomobile.com/library?externalId%5B0%5D=gopinath.nagarajan@internal.53.com_RemoteWebDriver_18-07-25_11_07_55_426&_timestamp%5B0%5D=1532516875532 ▀▄▀▄▀</span>
+                <span class="reporter-method-output">▀▄▀▄▀ REPORTIUM URL: https://fifththird.reporting.perfectomobile.com/library?externalId%5B0%5D=dinesh.venkataraman@internal.53.com_RemoteWebDriver_18-07-26_10_16_46_841&_timestamp%5B0%5D=1532600206815 ▀▄▀▄▀</span>
                 <span class="reporter-method-output">█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█</span>
                 <span class="reporter-method-output">█ TEST FAILED: Validating invalid user name and password error message █</span>
                 <span class="reporter-method-output">█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█</span>
-                <span class="reporter-method-output"><div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given I start the application by the name "Fifth Third"</div><div  class="teststepfail"><span class="teststepfail-label">T </span>When I enter "PerfectoMOBTest" and "Test@1234" <a href="img/ValidatingInvalidUserNameAndPasswordErrorMessage_1en9hvus1ukwt12658.png" target="_blank">[View Screenshot]</a> </div><div style="display:block;margin-left:10px;"><div  class="fail"><span class="fail-label">F </span>Timed out after 15 seconds waiting for presence of element located by: By.xpath: //AppiumAUT/XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField[1]
+                <span class="reporter-method-output"><div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given I start the application by the name "Fifth Third"</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And I am using an AppiumDriver</div><div  class="teststepfail"><span class="teststepfail-label">T </span>When I enter "PerfectoMOBTest" and "Test@1234" <a href="img/ValidatingInvalidUserNameAndPasswordErrorMessage_1pigja7wxzray25616.png" target="_blank">[View Screenshot]</a> </div><div style="display:block;margin-left:10px;"><div  class="fail"><span class="fail-label">F </span>Element with by xpath '//AppiumAUT/XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeButton[1]' wasn't found.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'ba1ffa30e57b', ip: '172.18.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-47-generic', java.version: '1.8.0_131'
+Driver info: driver.version: EventFiringWebDriver
+Command duration or timeout: 60.38 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
 System info: host: 'Bingo', ip: '192.168.1.4', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_60'
-Driver info: driver.version: QAFExtendedWebDriver</div></div><div  class="teststep"><span class="teststep-label">T </span>And I click on login button</div><div  class="teststep"><span class="teststep-label">T </span>Then I get an error message "Test Error1"</div></div></span>
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{reportPdfUrl=https://fifththird.reporting.perfectomobile.com/export/api/v1/test-executions/pdf?externalId[0]=dinesh.venkataraman@internal.53.com_RemoteWebDriver_18-07-26_10_16_46_841&_timestamp[0]=1532600206815, simpleIsVisibleCheck=true, available=false, language=English, deviceName=6CEDD7EA68F5F5211728B0554694B223BB4F86ED, deviceId=6CEDD7EA68F5F5211728B0554694B223BB4F86ED, resolution=1242x2208, mode=CONNECTED, password=, cradleId=BOS-E2-F1-5/VIRTUAL/05, deviceSessionId=dinesh.venkataraman@internal.53.com_RemoteWebDriver_18-07-26_10_16_46_841, driverClass=io.appium.java_client.ios.IOSDriver, automationName=Appium, host=fifththird.perfectomobile.com, javascriptEnabled=true, model=iPhone-8 Plus, rotatable=true, entityType=remote_web_driver, serverHost=1.5.43.22:11605, executionId=dinesh.venkataraman@internal.53.com_RemoteWebDriver_18-07-26_10_16_46_841, webdriver.remote.sessionid=84df156f-36ec-474b-b343-8bad019276f5, scriptName=RemoteWebDriver, operabilityRatingScore=100, cssSelectorsEnabled=true, status=Connected, bundleid=com.clairmail.fth.client, platform=ANY, wifiMacAddress=68:ef:43:e0:b5:f8, manufacturer=Apple, osVersion=11.4, platformVersion=11.4, singleTestReportUrl=https://fifththird.reporting.perfectomobile.com/library?externalId[0]=dinesh.venkataraman@internal.53.com_RemoteWebDriver_18-07-26_10_16_46_841&_timestamp[0]=1532600206815, inUse=true, takesScreenshot=true, platformName=iOS, firmware=11.4, applicationName=Fifth Third, testGridReportUrl=https://fifththird.reporting.perfectomobile.com/library?externalId[0]=dinesh.venkataraman@internal.53.com_RemoteWebDriver_18-07-26_10_16_46_841&_timestamp[0]=1532600206815, os=iOS, xcuitestFindOptimizations=true, allocatedTo=dinesh.venkataraman@internal.53.com, bundleId=com.apple.mobilesafari, serverConnector=, securityToken=, locationContextEnabled=true, location=NA-US-BOS, linkType=lab, reportKey=dinesh.venkataraman@internal.53.com_RemoteWebDriver_18-07-26_10_16_46_841, windTunnelReportUrl=https://fifththird.reporting.perfectomobile.com/library?externalId[0]=dinesh.venkataraman@internal.53.com_RemoteWebDriver_18-07-26_10_16_46_841&_timestamp[0]=1532600206815, user=}]
+Session ID: 84df156f-36ec-474b-b343-8bad019276f5
+*** Element info: {Using=xpath, value=//AppiumAUT/XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeButton[1]}</div></div><div  class="teststep"><span class="teststep-label">T </span>And I click on login button</div><div  class="teststep"><span class="teststep-label">T </span>Then I get an error message "Test Error1"</div></div></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -353,38 +346,38 @@ Driver info: driver.version: QAFExtendedWebDriver</div></div><div  class="testst
             <div class="chronological-class">
               <div class="chronological-class-name">com.qmetry.qaf.automation.step.client.Scenario</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">setupSuit(org.testng.TestRunner@3d34d211)</span>
+                <span class="method-name">setupSuit(org.testng.TestRunner@7dc0f706)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
-                <span class="method-name">setupTest(org.testng.TestRunner@3d34d211)</span>
+                <span class="method-name">setupTest(org.testng.TestRunner@7dc0f706)</span>
                 <span class="method-start">24 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
-                <span class="method-name">setup(org.testng.TestRunner@3d34d211)</span>
-                <span class="method-start">35 ms</span>
+                <span class="method-name">setup(org.testng.TestRunner@7dc0f706)</span>
+                <span class="method-start">36 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">setupMethod(public void com.qmetry.qaf.automation.step.client.Scenario.scenario(), org.testng.TestRunner@3d34d21...)</span>
+                <span class="method-name">setupMethod(public void com.qmetry.qaf.automation.step.client.Scenario.scenario(), org.testng.TestRunner@7dc0f70...)</span>
                 <span class="method-start">42 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Validating invalid user name and password error message</span>
-                <span class="method-start">42 ms</span>
+                <span class="method-start">43 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod(org.testng.TestRunner@3d34d211, [TestResult name=Validating invalid user name and password error mes...)</span>
-                <span class="method-start">107260 ms</span>
+                <span class="method-name">afterMethod(org.testng.TestRunner@7dc0f706, [TestResult name=Validating invalid user name and password error mes...)</span>
+                <span class="method-start">99628 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
-                <span class="method-name">afterClass(org.testng.TestRunner@3d34d211)</span>
-                <span class="method-start">107261 ms</span>
+                <span class="method-name">afterClass(org.testng.TestRunner@7dc0f706)</span>
+                <span class="method-start">99628 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
-                <span class="method-name">afterTest(org.testng.TestRunner@3d34d211)</span>
-                <span class="method-start">107262 ms</span>
+                <span class="method-name">afterTest(org.testng.TestRunner@7dc0f706)</span>
+                <span class="method-start">99629 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -7,7 +7,7 @@
   </listeners>
   <test name="IOS Calc Test(failed)" parallel="tests">
     <parameter name="env.resources" value="src/main/resources/ios"/>
-    <parameter name="driver.capabilities.model" value="iPhone.*"/>
+    <parameter name="driver.capabilities.model" value="iPhone-8 Plus"/>
     <groups>
       <run>
         <include name="@smoke"/>
